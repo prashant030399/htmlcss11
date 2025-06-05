@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+width:50%;
+height:306px;;
+background-color: white;
+
+margin-left:25%;
+margin-top:-40px;
+
+ box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+
+}
+.text{
+    width:80%;
+    height: 30px;
+   
+ margin-left:10%;
+    border: none;
+  border-bottom: 2px solid #484747; /* underline only */
+  outline: none;
+  padding: 8px 0;
+  font-size: 16px;
+  background: transparent;
+  transition: border-color 0.3s;
+}
+
+.btn{
+    width:80%;
+    height:30px;
+    margin-top:20px;
+    background-color: #6c63ff;
+    color: white;
+    text-align: center;
+    border-bottom: 0cap;
+    border-right: 0cap;
+    border-top: 0cap;
+    border-left: 0cap;  
+    display:block;
+    margin-left: 10%;
+}
+

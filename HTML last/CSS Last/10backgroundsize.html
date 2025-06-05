@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My Webpage</title>
+  <link rel="stylesheet" href="index.css" />
+
+  <style>
+div{
+    display:inline-block;
+    width:100px;
+    height:100px;
+
+}
+#box1{
+background-image:url("me.jpg");
+background-size:cover;    //prefereed
+}
+#box2{
+background-image:url("me.jpg");
+background-size:contain;
+}
+
+#box3{
+background-image:url("me.jpg");
+background-repeat:no-repeat;
+}
+
+
+
+</style>
+  </head>
+
+  <body>
+<div id="box1" style="background-color:blue;">box1</div>
+<div id="box2" style="background-color:red;">box2</div>
+<div id="box3" style="background-color:orange;">box3</div>
+<div id="box4" style="background-color:pink;">box4</div>
+
+  </body>
+</html>

@@ -1,0 +1,174 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+header{
+width:100%;
+height:160px;
+background-color: rgb(64, 60, 60);
+
+
+}
+
+.name{
+    text-align:center;
+    color:white;
+    padding-top:50px;
+    font-weight:700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ul{
+display:inline;
+display:flex;
+margin-top:30px;
+justify-content:space-evenly;
+color:white;
+font-weight:300;
+
+}
+
+li{
+list-style-type: none;
+color:white;
+
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline only on hover */
+}
+
+
+.container{
+    width:100%;
+    height:1100px;
+    background-color:wheat;
+    position:absolute;
+}
+
+.aboutme{
+width:94%;
+height:200px;
+background-color:white;
+border-radius: 10px;
+margin-left:3%;
+margin-top: 20px;
+padding-top:20px;
+}
+
+.m{
+    padding-top:35px;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size:25px;
+    color:rgb(90, 53, 53);
+}
+.h{
+    padding-top:20px;
+    padding-left: 15px;
+    font-weight: 300;
+    font-size:17px;
+    color:black;
+}
+.p{
+    padding-top:5px;
+    padding-left: 15px;
+    font-weight: 300;
+    font-size:17px;
+    color:black;
+}
+.projects{
+   width:94%;
+height:300px;
+background-color:white;
+border-radius: 10px;
+margin-left:3%;
+margin-top: 20px;
+padding-top:20px;
+}
+
+.pp{
+   padding-top:35px;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size:25px;
+    color:rgb(41, 32, 32); 
+    margin-bottom:5px;  
+}
+
+.pi{
+width:91%;
+height:80px;
+background-color:rgb(230, 223, 223);
+border-radius: 10px;
+margin-left:3%;
+padding-top:20px;
+  padding-left: 20px;
+}
+.p1{
+   padding-top:10px;
+    
+    font-weight: 300;
+    font-size:18px;
+    color:rgb(41, 32, 32); 
+    
+}
+
+.con{
+   width:94%;
+height:370px;
+background-color:white;
+border-radius: 10px;
+margin-left:3%;
+margin-top: 20px;
+padding-top:20px;
+} 
+
+.cme{
+ padding-top:35px;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size:25px;
+    color:rgb(41, 32, 32); 
+    margin-bottom:5px;    
+}
+.namee{
+ padding-top:10px;
+ margin-right:515px;
+  
+    font-weight: 300;
+    font-size:15px;
+    color:rgb(41, 32, 32); 
+    
+    
+}
+.but{
+     width:15%;
+height:30px;
+background-color:rgb(56, 46, 46);
+color:white;
+border-radius: 5px;
+border-bottom: 0ch;
+margin-left:6%;
+margin-top: 20px;
+border-right:0 ;
+
+text-align:center;  
+}
+
+footer{
+ width:100%;
+height:160px;
+background-color: rgb(64, 60, 60);
+   display:flex;
+   justify-content: center;
+   align-items:center;
+   color:white;
+}
+
+

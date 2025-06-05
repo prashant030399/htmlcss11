@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My Webpage</title>
+  <link rel="stylesheet" href="index.css" />
+
+  <style>
+.container{
+      display: flex;
+  flex-direction: row-reverse;
+@REM   flex-direction: column;
+  width:600px;
+height:200px;
+border:2px solid black;
+}
+
+.container1{
+    margin-top:2px;
+      display: flex;
+justify-content:flex-start;
+  width:600px;
+height:200px;
+border:2px solid black;
+}
+
+.container2{
+    margin-top:2px;
+      display: flex;
+align-item:flex-start;
+  width:600px;
+height:200px;
+border:2px solid black;
+}
+
+.div{
+    width:100px;
+    height:100px;
+}
+
+.container3{
+    margin-top:2px;
+      display: flex;
+      flex-wrap:wrap;
+align-content:center;
+  width:600px;
+height:200px;
+border:2px solid black;
+}
+
+
+
+
+</style>
+  </head>
+
+  <body>
+
+<div class="container">
+
+<div class="div" id="box1" style="background-color:blue;">box1</div>
+<div class="div" id="box2" style="background-color:red;">box2</div>
+<div class="div" id="box3" style="background-color:orange;">box3</div>
+<div class="div" id="box4" style="background-color:pink;">box4</div>
+
+</div>
+
+<div class="container1">
+
+<div class="div" id="box11" style="background-color:blue;">box1</div>
+<div class="div" id="box21" style="background-color:red;">box2</div>
+<div class="div" id="box31" style="background-color:orange;">box3</div>
+<div class="div" id="box41" style="background-color:pink;">box4</div>
+
+</div>
+<div class="container2">
+
+<div class="div" id="box11" style="background-color:blue;">box1</div>
+<div class="div" id="box21" style="background-color:red;">box2</div>
+<div class="div" id="box31" style="background-color:orange;">box3</div>
+<div class="div" id="box41" style="background-color:pink;">box4</div>
+
+</div>
+
+<h1>Container 3</h1>
+
+<div class="container3">
+
+<div class="div" id="box13" style="background-color:blue;">box1</div>
+<div class="div" id="box23" style="background-color:red;">box2</div>
+<div class="div" id="box33" style="background-color:orange;">box3</div>
+<div class="div" id="box43" style="background-color:pink;">box4</div>
+
+</div>
+
+  </body>
+</html>

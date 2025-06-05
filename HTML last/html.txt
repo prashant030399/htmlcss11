@@ -1,0 +1,23 @@
+✅ Visual Studio (full IDE) Shortcut for Multiple Cursors:
+Windows:
+
+Hold Alt + Shift and click to insert additional cursors.
+
+Or use Ctrl + Alt + Down Arrow / Up Arrow to add cursors vertically.
+
+
+<hr>
+<br/>
+
+++++++++++++++++====
+
+
+	
+
+
+
+
+
+
+
+

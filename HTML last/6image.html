@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test page</title>
+    <style>
+      p {
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+
+<img src="ttps://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=600"
+ height="200px" width="600px" alt="no image">
+
+
+<picture>
+<source media="(min-width:650px) " srcset="https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=600" />
+<img src="ttps://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+</picture>
+
+
+
+//image map generator 
+
+<img src="https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="" title="" href="" coords="402,189,438,234" shape="rect" onclick="one()"  > ///imp
+</map>
+
+
+<script>
+function one(){
+    alert("Hello");
+}
+</script>
+
+
+  </body>
+</html>

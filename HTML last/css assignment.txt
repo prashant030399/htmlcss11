@@ -1,0 +1,97 @@
+🟢 1. Build a Personal Portfolio Page (Basic Layout)
+Objective: Use only HTML and CSS (no JavaScript).
+
+What to Include:
+
+Header with name and navigation bar
+
+About Me section
+
+Projects section (just sample text/images)
+
+Contact section with a simple form
+
+Focus On:
+
+CSS Box Model
+
+Padding, margin, borders
+
+Font styling and background colors
+
+🔵 2. Create a Responsive Landing Page for a Product
+Objective: Practice Flexbox and responsive design.
+
+What to Include:
+
+Hero section with image and call to action
+
+Product features (3–4 cards)
+
+Pricing table
+
+Footer
+
+Focus On:
+
+Flexbox
+
+Media queries
+
+Google Fonts and custom colors
+
+🟠 3. Clone a Popular Website Homepage (e.g., Netflix, YouTube)
+Objective: Practice real-world UI layout.
+
+What to Include:
+
+Header with logo and nav items
+
+Content grid or carousel (static)
+
+Footer with links
+
+Focus On:
+
+CSS Grid
+
+Flexbox combination
+
+Precise spacing and alignment
+
+🟣 4. Design an Interactive Form with Animations
+Objective: Explore transitions and animations in CSS.
+
+What to Include:
+
+Sign-up/Login form
+
+Input focus effects
+
+Floating labels or slide-in animation
+
+Focus On:
+
+Transitions
+
+Keyframe animations
+
+Custom buttons and hover effects
+
+🔴 5. Build a Theme Switcher Portfolio (Light/Dark Mode)
+Objective: Combine advanced CSS techniques.
+
+What to Include:
+
+Toggle button to switch themes (you can use CSS only or minimal JS)
+
+Entire page adapts (background, text, buttons)
+
+Focus On:
+
+CSS Variables
+
+Custom properties
+
+Advanced selectors and pseudo-elements
+
