@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>Button Clicked</button>
+</body>
+<script>
+   
+class React {
+
+constructor(){
+    this.name  = "react"
+    this.server = "http://localhost:3000"
+
+document.querySelector('button').addEventListener('click',this.handleClick.bind(this))
+
+}
+
+handleClick(){
+console.log("button got clicked ")
+console.log(this.server)
+}
+
+}
+
+const nb = new React()
+
+
+</script>
+</html>
+
+
+//
+The .bind() method in JavaScript is used to create a new function 
+with a specific this value and, optionally, preset arguments.
+
+🔹 Key Features:
+✅ Doesn't execute the function immediately.
+✅ Returns a new function with this permanently set to the given value.

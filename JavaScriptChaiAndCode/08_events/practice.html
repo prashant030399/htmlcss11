@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+
+
+<p><a id="link1" href="#Link1">Link1</a></p>
+<p><a id="link2" href="#Link2">Link2</a>(u can't )</p>
+<p id="log"></p>
+ 
+</body>
+
+<script>
+
+
+function stopLink(e){
+    e.preventDefault()
+}
+
+function loglink(e){
+    const log = document.querySelector("#log");
+
+    if(e.target.tagName === 'A'){
+        log.innerHTML = e.defaultPrevented ? `Sorry u can't` : `visiting link`;
+    }
+}
+
+
+document.addEventListener("click",loglink);
+document.getElementById("link2").addEventListener("click",stopLink);
+
+
+
+
+</script>
+
+
+
+
+</html>

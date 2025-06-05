@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events </title>
+</head>
+<body>
+
+<div id="parent">
+  Click parent
+  <div id="child">Click child</div>
+</div>
+
+<button id="reset">Reset</button>
+<pre id="output"></pre>
+
+ 
+</body>
+
+<script>
+
+//e.currentTarget    --    Refers to the element on which the event listener was attached.
+//e.target     --     Refers to the exact element where the event occurred.
+
+const output = document.querySelector("#output");
+const parent = document.querySelector("#parent");
+parent.addEventListener("click", (e) => {
+  const currentTarget = e.currentTarget.getAttribute("id");
+  const target = e.target.getAttribute("id");
+  output.textContent = `Current target: ${currentTarget}\n`;
+  output.textContent += `Target: ${target}`;
+});
+
+const reset = document.querySelector("#reset");
+reset.addEventListener("click", () => document.location.reload());
+
+</script>
+
+
+
+
+</html>

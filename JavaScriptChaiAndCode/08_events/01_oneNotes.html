@@ -1,0 +1,80 @@
+Normally js run sequentially  but sometimes js event  don't
+
+//1  1st method to click by onClick
+
+document.getElementById("owl").onclick  = function(){
+    console.log("Owl clicked");
+}
+
+     // attachEvent()
+    // jQuery - on
+
+
+// u ve to study
+
+    // type, timestamp, defaultPrevented();
+    // target, relatedTarget, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+
+
+//2 Another Method to click by addEventListener
+
+//format
+//document.getElementById("images").addEventListener('click',(e)=>{},false)  
+//By default it is false but still u ve to write it 
+
+
+//So In event propagation, we have 2 context 
+1) Event Public (false)   - (from inside to outside)  (from image(inside li) to ul)
+2) Event Capturing (true) - (from outside to inside)  (from ul to image(inside li)) 
+
+
+
+document.getElementById("images").addEventListener('click', (e)=>{
+console.log("clicked  inside the ul");
+},false)
+
+
+document.getElementById("owl").addEventListener('click', (e)=> {
+   console.log("owl clicked");
+},false)
+
+
+document.getElementById("images").addEventListener('click', (e)=>{
+console.log("clicked  inside the ul");
+},true)
+
+document.getElementById("owl").addEventListener('click', (e)=> {
+   console.log("owl clicked");
+},true)
+
+
+
+// by stopPropagation it wouldn't propagate(traverse)  
+
+document.getElementById("owl").addEventListener('click', (e)=> {
+   console.log("owl clicked");
+   e.stopPropagation()
+},false)
+
+
+document.getElementById("google").addEventListener('click' ,(e) => {
+e.preventDefault();
+e.stopPropagation();
+console.log("google clicked");
+},false)
+
+
+
+document.getElementById('images').addEventListener('click' ,(e) => {
+    console.log(e.target.tagName);
+if(e.target.tagName === 'IMG'){
+    console.log(e.target.id);
+    let removeIt = e.target.parentNode
+    removeIt.remove();
+}
+
+},false)
+

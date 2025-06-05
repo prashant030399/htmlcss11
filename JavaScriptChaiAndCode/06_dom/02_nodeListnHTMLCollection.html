@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+</head>
+<body>
+    
+<div class= "bg-black">
+<h1 id="title" class="heading"> Dom learning on chai aur  code   <span>Hello Everyone</span> </h1>
+<p>lorem fjnsvjndsjvnm jnjn  </p> 
+
+</div>
+
+</body>
+</html>
+
+
+//check img = lec31 in d
+
+
+in console
+
+console.log(window)
+console.log(document)
+
+
+console.log(document.baseURI)
+console.log(document.links)     // u ll get all the links
+console.log(document.links[2])
+
+
+document.getElementById('firstHeading')
+document.getElementById('firstHeading').innerHTML= "<h1>Chai aur  code</h1>"
+
+
+
+ // write in console
+
+document.getElementById('title').id
+document.getElementById('title').className
+document.getElementById('title').getAttribute()
+document.getElementById('title').setAttribute('class','test heading')     // add classname- test
+
+
+title.style.backgroundColor='green'
+title.style.padding="15px"
+title.style.borderRadius="15px"
+
+
+title.innerText       //doesn't give which is not visible  
+//   'Dom Learning on chai aur code Hello Everyone'
+
+title.textContent           // give which is not visible also(all)
+// ' Dom Learning on chai aur  code  Hello Everyone  '
+
+title.innerHTML              
+//   ' Dom Learning on chai aur  code  <span style="display:none;">Hello Everyone</span>  '
+
+
+
+//querySelector
+
+document.querySelector('h2')          // for selecting html element
+document.querySelector('#title')     //for selecting id   
+document.querySelector('.heading')          //for selecting class
+document.querySelector('input[type="password"]')     
+
+document.querySelector('ul')
+const myul = document.querySelector('ul')
+
+myul.querySelector('li')
+const turnGreen = myul.querySelector('li')
+turnGreen.style.backgroundColor='Green'
+turnGreen.textContent='Ek'
+
+
+//querySelectorAll
+
+document.querySelectorAll('li')
+// NodeList and HTML Collections are not pure array    but have the properties of array
+// in the nodelist we can use forEach
+
+const tempLiList = document.querySelectorAll('li')
+tempLiList[0].style.color='blue'    //whenever u use querySelectorAll u ve to use []
+
+tempLiList.forEach(function(l){
+    l.style.backgroundColor='green'
+})
+
+
+//className
+
+document.getElementsByClassName('list-item')
+const tempClassList = document.getElementsByClassName('list-item')
+
+
+//Convert HTML Collections to array
+Array.from(tempClassList)
+const myconvertedArray = Array.from(tempClassList)
+myconvertedArray
+
+myconvertedArray.forEach(function(li){
+    li.style.color = 'orange'
+})
+
+
+
+/// visit the wiki of javascript
+
+document.querySelectorAll('h2')
+const allH2 = document.querySelectorAll('h2')
+allH2[0].innerText
+allH2[0].innerText = "Prashant"
+
+
+
+document.querySelectorAll('.mw-headline')
+const myH2 = document.querySelectorAll('.mw-headline')
+myH2.innerText 
+myH2.forEach(function(l){
+    l.style.color='red';
+})
+
+myH2.forEach(function(l){
+    l.style.color= 'black';
+        l.style.backgroundColor= 'green';
+            l.style.padding= '10px';
+                l.innerText= "Prashant"
+})
+
+
+

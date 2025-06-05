@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<h2> setInterval and clearInterval</h2>
+
+
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+</body>
+
+<script>
+
+//chronology
+//first make setinteval within that make function with console     and give times
+//then wrap the function in saydate  
+//then then wrap the setintval in cosnt intervalId
+//n then in clearInterval  call the intervalId
+
+
+//In setInterval we can place 3 parameters
+
+
+
+
+let sayDate = () => {
+  document.querySelector('h3').innerHTML="jj"
+}
+
+
+let intervalId ;
+
+
+document.querySelector('#start').addEventListener('click', ()=> {
+intervalId= setInterval(sayDate,2000,"Hi")
+})
+
+
+document.querySelector('#stop').addEventListener('click', ()=> {
+    clearInterval(intervalId)
+})
+
+</script>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events </title>
+</head>
+<body>
+
+<p>Move your mouse to see its position.</p>
+<p id="screen-log"></p>
+
+e.clientX n e.clientY
+Gives the x and y coordinates of the mouse pointer relative to the viewport (visible part of the webpage).
+
+e.screenX n e.screenY
+Provides the x and y coordinates relative to the entire screen (including browser toolbars, OS elements, etc.).
+
+e.pageX n e.pageY
+Gives the x and y coordinates relative to the entire document (including scrolling). 
+
+e.offsetX n e.offsetY
+Provides x and y coordinates relative to the target element where the event occurred.
+
+
+client -> Used in handling mouse events like mousemove, click, etc.
+screen -> Used when dealing with multi-screen setups or tracking the exact screen position of an event.
+page   -> Used when dealing with scrolling pages, like positioning elements dynamically.
+offset -> Useful for canvas drawing, drag-and-drop inside an element, and interactive elements.
+
+</body>
+
+<script>
+
+
+
+let screenLog = document.querySelector("#screen-log");
+document.addEventListener("mousemove", logKey);
+
+function logKey(e) {
+  screenLog.innerText = `
+    Screen X/Y: ${e.screenX}, ${e.screenY}
+    Client X/Y: ${e.clientX}, ${e.clientY}
+    Page X/Y: ${e.pageX},${e.pageY}
+    Offset X/Y: ${e.offsetX},${e.offsetY} `;
+}
+</script>
+
+
+
+
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Alt,ctrl,shift key eg</title>
+
+    <script>
+    function showChar(e) {
+  alert(
+    "Key KeyDown: " + e.key + "\n" +
+    "ALT key KeyDown: " + e.altKey + "\n" +
+    "CTRL key KeyDown:" + e.ctrlKey + "\n" +
+    "SHIFT key KeyDown:" + e.shiftKey
+  );
+}
+
+document.addEventListener("keydown", showChar);
+    </script>
+  </head>
+
+  <body >
+    <p>
+          <h2>Press any key to see the event details!</h2>
+    </p>
+  </body>
+</html>

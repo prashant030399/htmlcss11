@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<h2> setTimeout and clearTimeout </h2>
+<button id="stop">Stop</button>
+
+
+</body>
+
+<script>
+
+//chronology
+
+// document.qs('h2).innerHTML
+//wrapped in changeTextt
+//then simple setTimeout and call changeTextt
+//wrapped the same in changeme
+//then simple clearTimeout
+//then do this with #stop
+
+
+//setTimeout -> after this time, only one time i'll do your work
+//setInterval -> after this time i'll keep doing ur work
+
+
+
+const changeTextt = () => {
+document.querySelector('h2').innerHTML="Best"
+}
+
+const changeMe  = setTimeout(changeTextt,2000)    
+//the first arguement of setTimeout is handler , so  we ve to give reference i.e; prashant and not execute i.e.; prashant() 
+
+document.querySelector('#stop').addEventListener('click', () =>{
+clearTimeout(changeMe)
+})
+
+
+
+
+
+
+
+
+
+</script>
+</html>

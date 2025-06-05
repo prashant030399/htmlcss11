@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+<p>Press any key or click the mouse to get the event type.</p>
+
+<p>The type read-only property of the Event interface returns a string 
+containing the event's type. It is set when the event is constructed and 
+is the name commonly used to refer to the specific event, such as click, load, or error. </p>
+
+
+<p id="log"></p>
+ 
+</body>
+
+<script>
+
+function getEventType(e) {
+  const log = document.getElementById("log");
+  log.innerText = `${e.type}\n${log.innerText}` ;
+}
+
+//           
+// Keyboard events
+document.addEventListener("keydown", getEventType, false);  //keydown -> triggered when key is pressed
+document.addEventListener("keyup", getEventType, false);     //keyup -> triggered when key is released
+
+// Mouse events
+document.addEventListener("mousedown", getEventType, false); // //mousedown ->fires when mouse button is pressed down (1st ye hota h)
+document.addEventListener("mouseup", getEventType, false); //mouseup -> fires when mouse button is released 
+document.addEventListener("click", getEventType, false); //click -> Fires when a full click occurs (mousedown → mouseup on the same element).
+
+</script>
+
+
+
+
+</html>
